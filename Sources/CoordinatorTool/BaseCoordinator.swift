@@ -10,7 +10,13 @@ open class BaseCoordinator: Coordinatable {
     
     var childCoordinators: [Coordinatable] = []
     
-    open func start() { }
+    open func start() {
+        startWithSomething()
+    }
+    
+    open func startWithSomething() {
+        
+    }
     
     // add only unique object
     public func addDependency(_ coordinator: Coordinatable) {

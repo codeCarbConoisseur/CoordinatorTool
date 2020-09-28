@@ -8,4 +8,5 @@
 
 public protocol Coordinatable: class {
     func start()
+    func startWithSomething()
 }
