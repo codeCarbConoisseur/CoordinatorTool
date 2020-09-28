@@ -10,6 +10,8 @@ open class BaseCoordinator: Coordinatable {
     
     var childCoordinators: [Coordinatable] = []
     
+    public init() { }
+    
     open func start() {
         startWithSomething()
     }
