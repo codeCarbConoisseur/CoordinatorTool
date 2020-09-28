@@ -6,7 +6,7 @@
 //
 
 
-protocol Routable: Presentable {
+public protocol Routable: Presentable {
     
     func present(_ module: Presentable?)
     func present(_ module: Presentable?, animated: Bool)
