@@ -6,7 +6,7 @@
 //
 
 
-public class BaseCoordinator: Coordinatable {
+open class BaseCoordinator: Coordinatable {
     
     var childCoordinators: [Coordinatable] = []
     
