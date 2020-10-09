@@ -64,6 +64,7 @@ public final class Router: NSObject, Routable {
             completions[controller] = completion
         }
         controller.hidesBottomBarWhenPushed = hideBottomBar
+        controller.modalPresentationStyle  = .popover
         rootController?.pushViewController(controller, animated: animated)
     }
     
