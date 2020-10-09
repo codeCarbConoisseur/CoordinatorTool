@@ -9,7 +9,7 @@
 public protocol Routable: Presentable {
     
     func present(_ module: Presentable?)
-    func present(_ module: Presentable?, animated: Bool)
+    func present(_ module: Presentable?, animated: Bool, completion: (() -> Void)?)
     
     func push(_ module: Presentable?)
     func push(_ module: Presentable?, hideBottomBar: Bool)
